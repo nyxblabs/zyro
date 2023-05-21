@@ -34,11 +34,13 @@
   "scripts": {
     "prepack": "nyxr build && clean-pkg-json",
     "build": "buildkarium",
-    "lint": "eslint --cache .",
     "type-check": "tsc --noEmit",
-    "test": "dynot tests",
     "test:dts": "tsd -f tests/zyro.test-d.ts",
-    "dev": "dynot watch --conditions=development tests"
+    "dev": "dynot watch --conditions=development tests",
+    "lint": "eslint --ext .ts,.js .",
+    "lint:fix": "eslint --ext .ts,.js . --fix",
+    "release": "nyxr test && nyxr build && nyxlx changelogen --release && pnpm publish && git push --follow-tags",
+    "test": "nyxr lint && vitest run --coverage"
   },
   "dependencies": {
     "tabletron": "^0.0.2",
