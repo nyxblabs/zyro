@@ -43,17 +43,20 @@
     "test": "nyxr lint && vitest run --coverage"
   },
   "dependencies": {
-    "tabletron": "^0.0.2",
-    "luminar": "^0.0.5"
+    "luminar": "^0.0.5",
+    "tabletron": "^0.0.2"
   },
   "devDependencies": {
-    "@nyxb/picocolors": "1.0.2",
     "@nyxb/eslint-config": "0.0.53",
+    "@nyxb/picocolors": "1.0.2",
     "@types/node": "^18.13.0",
+    "@vitest/coverage-c8": "^0.31.1",
     "clean-pkg-json": "^1.2.0",
     "eslint": "^8.41.0",
+    "nanospy": "^0.5.0",
     "tsd": "^0.25.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.31.1"
   },
   "files": [
     "dist"
