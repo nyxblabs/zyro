@@ -27,6 +27,9 @@ devDependencies:
   consolji:
     specifier: ^0.1.4
     version: 0.1.4
+  dynot:
+    specifier: ^0.1.8
+    version: 0.1.8
   eslint:
     specifier: ^8.41.0
     version: 8.41.0
@@ -1337,6 +1340,13 @@ packages:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
       domhandler: 5.0.3
+    dev: true
+
+  /dynot@0.1.8:
+    resolution: {integrity: sha512-Wc30Q4wcf8h+oHpRmTve2VhghBfDwLVpe3wDAByjhJswmKnwb19JE2+FFYBvFtQAO2PnaUsDHxKsMD4lwStYSg==}
+    hasBin: true
+    dependencies:
+      requireflow: 0.0.2
     dev: true
 
   /emoji-regex@8.0.0:
@@ -3394,6 +3404,10 @@ packages:
   /require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /requireflow@0.0.2:
+    resolution: {integrity: sha512-ORx1QwL21/KQZXSwPyIjhmrrkWeFwj1KO00DmGEwIRHxQxfQVgWwvjibJbMcc5oRhRv6ATTUjzKtCfaMg834PA==}
     dev: true
 
   /resolve-from@4.0.0:
