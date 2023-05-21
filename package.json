@@ -1,6 +1,6 @@
 {
   "name": "zyro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🚀 Unleash the power of command-line with our intuitive CLI development tool - your gateway to automation! 🛠️🎉",
   "author": "Dennis Ollhoff <contact@nyxb.xyz",
   "license": "MIT",
@@ -13,20 +13,17 @@
     "url": "https://github.com/nyxblabs/zyro/issues"
   },
   "funding": "https://github.com/nyxblabs/zyro?sponsor=1",
-  "bin": {
-    "example": "/dist/example.js"
-  },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/index.js",
+    "require": "./dist/index.cjs",
     "import": "./dist/index.mjs",
     "types": "./dist/index.d.ts"
   },
   "imports": {
     "#zyro": {
-      "types": "./src/index.ts",
+      "types": "./src/index.d.ts",
       "development": "./src/index.ts",
       "default": "./dist/index.js"
     }
@@ -38,8 +35,8 @@
     "test:dts": "tsd -f tests/zyro.test-d.ts",
     "lint": "eslint --ext .ts,.js .",
     "lint:fix": "eslint --ext .ts,.js . --fix",
-    "release": "nyxr test && nyxr build && nyxlx changelogen@latest --release && pnpm publish",
-    "test": "nyxr lint && vitest run --coverage"
+    "release": "nyxr build && nyxlx changelogen@latest --release && pnpm publish",
+    "test": "nyxr lint && vitest"
   },
   "dependencies": {
     "luminar": "^0.0.5",
@@ -50,6 +47,7 @@
     "@nyxb/picocolors": "1.0.2",
     "@types/node": "^18.13.0",
     "@vitest/coverage-c8": "^0.31.1",
+    "buildkarium": "^0.0.2",
     "clean-pkg-json": "^1.2.0",
     "consolji": "^0.1.4",
     "dynot": "^0.1.8",
