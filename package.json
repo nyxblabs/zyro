@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "tabletron": "^0.0.2",
-    "luminar": "^0.0.4"
+    "luminar": "^0.0.5"
   },
   "devDependencies": {
     "@nyxb/picocolors": "1.0.2",
