@@ -38,7 +38,7 @@
     "test:dts": "tsd -f tests/zyro.test-d.ts",
     "lint": "eslint --ext .ts,.js .",
     "lint:fix": "eslint --ext .ts,.js . --fix",
-    "release": "nyxr test && nyxr build && nyxlx changelogen --release && pnpm publish && git push --follow-tags",
+    "release": "nyxr test && nyxr build && nyxlx changelogen@latest --release && pnpm publish",
     "test": "nyxr lint && vitest run --coverage"
   },
   "dependencies": {
