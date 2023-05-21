@@ -14,7 +14,7 @@ const argv = cli({
 
    parameters: ['<pkg-path>'],
 
-   flags: {
+   luminars: {
       sizes: {
          type: [String],
          alias: 'S',

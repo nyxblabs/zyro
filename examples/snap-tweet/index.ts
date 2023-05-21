@@ -14,7 +14,7 @@ const argv = cli({
 
    parameters: ['<tweet urls...>'],
 
-   flags: {
+   luminars: {
       outputDir: {
          type: String,
          alias: 'o',
