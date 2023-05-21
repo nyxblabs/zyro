@@ -24,6 +24,9 @@ devDependencies:
   clean-pkg-json:
     specifier: ^1.2.0
     version: 1.2.0
+  consolji:
+    specifier: ^0.1.4
+    version: 0.1.4
   eslint:
     specifier: ^8.41.0
     version: 8.41.0
@@ -1151,6 +1154,10 @@ packages:
       md5-hex: 3.0.1
       semver: 7.5.1
       well-known-symbols: 2.0.0
+    dev: true
+
+  /consolji@0.1.4:
+    resolution: {integrity: sha512-uahGF/QnlmYYsjuSiJSLSIWLaADSkqsltYy8n1hjJgdUen2JD9/vgxJEtVqS5tEGzhzoIYcFY55wvcsvMBlTTA==}
     dev: true
 
   /convert-source-map@1.9.0:

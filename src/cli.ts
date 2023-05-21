@@ -1,4 +1,5 @@
 import { typeLuminar } from 'luminar'
+import consolji from 'consolji'
 import type {
    CallbackFunction,
    CliOptions,
@@ -97,7 +98,7 @@ function mapParametersToArguments(
          required
          && (!value || (spread && value.length === 0))
       ) {
-         console.error(`Error: Missing required parameter ${stringify(name)}\n`)
+         consolji.error(`Error: Missing required parameter ${stringify(name)}\n`)
          showHelp()
          return process.exit(1)
       }
@@ -156,7 +157,7 @@ function cliBase<
    )
 
    const showVersion = () => {
-      console.log(options.version)
+      consolji.log(options.version)
    }
 
    if (
@@ -183,7 +184,7 @@ function cliBase<
          luminars,
       })
 
-      console.log(renderHelpFunction(nodes, helpRenderers))
+      consolji.log(renderHelpFunction(nodes, helpRenderers))
    }
 
    if (
