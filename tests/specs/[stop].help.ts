@@ -225,7 +225,7 @@ describe('help', () => {
          mocked.restore()
 
          expect(mocked.processExit.calls).toStrictEqual([[0]])
-         expect(mocked.consoleLog.calls).toStrictEqual([['\u001B[1mLuminars:\u001B[22m\n  -h, --help                      Show help\n      --luminar                   \n      --luminar-a <string>        \n      --luminar-b <number>        \n      --luminar-c <value>          (default: {})\n']])
+         expect(mocked.consoleLog.calls).toStrictEqual([['\u001B[1mLuminars:\u001B[22m\n      --luminar                   \n      --luminar-a <string>        \n      --luminar-b <number>        \n      --luminar-c <value>          (default: {})\n  -h, --help                   Show help\n']])
       })
 
       test('help disabled', () => {
