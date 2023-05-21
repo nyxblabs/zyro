@@ -1,0 +1,11 @@
+{
+   "extends": ["@nyxb"],
+   "rules": {
+     "@next/next/no-html-link-for-pages": 0
+   },
+   "settings": {
+      "react": {
+         "version": "18"
+      }
+   }
+}

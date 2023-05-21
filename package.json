@@ -1,0 +1,68 @@
+{
+  "name": "zyro",
+  "version": "0.0.1",
+  "description": "🚀 Unleash the power of command-line with our intuitive CLI development tool - your gateway to automation! 🛠️🎉",
+  "author": "Dennis Ollhoff <contact@nyxb.xyz",
+  "license": "MIT",
+  "hompage": "https://💻nyxb.ws",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxblabs/zyro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyxblabs/zyro/issues"
+  },
+  "funding": "https://github.com/nyxblabs/zyro?sponsor=1",
+  "bin": {
+    "example": "/dist/example.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs",
+    "types": "./dist/index.d.ts"
+  },
+  "imports": {
+    "#zyro": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "prepack": "nyxr build && clean-pkg-json",
+    "build": "buildkarium",
+    "lint": "eslint --cache .",
+    "type-check": "tsc --noEmit",
+    "test": "dynot tests",
+    "test:dts": "tsd -f tests/zyro.test-d.ts",
+    "dev": "dynot watch --conditions=development tests"
+  },
+  "dependencies": {
+    "tabletron": "^0.0.2",
+    "luminar": "^0.0.4"
+  },
+  "devDependencies": {
+    "@nyxb/picocolors": "1.0.2",
+    "@nyxb/eslint-config": "0.0.53",
+    "@types/node": "^18.13.0",
+    "clean-pkg-json": "^1.2.0",
+    "eslint": "^8.41.0",
+    "tsd": "^0.25.0",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cli",
+    "command line",
+    "argv",
+    "parameters",
+    "flags",
+    "node",
+    "typescript"
+  ]
+}
